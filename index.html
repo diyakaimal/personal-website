@@ -16,7 +16,6 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -39,6 +38,14 @@
                 <img src="Media/IMG_4822.jpg" alt="Diya Kaimal" class="hero-image" style="flex: 1; max-width: 300px; border-radius: 10px;">
                 </div>
                 <div class="cta-buttons">
+                    <a href="mailto:diya.kaimal@gmail.com" target="_blank"
+                    style="font-size:28px; text-decoration:none;">
+                    <img src="Media/email_icon.png" alt="Email Icon" style="vertical-align: middle; margin-right: 10px; size: 10px; width: 50px; height: auto;">
+                    </a>
+                    <a href="https://www.linkedin.com/in/diyakaimal" target="_blank"
+                    style="font-size:28px; text-decoration:none;">
+                     <img src="Media/linkedin-icon.png" alt="LinkedIn Icon" style="vertical-align: middle; margin-right: 10px; width: 50px; height: auto; ">
+                    </a>
                 </div>
             </div>
             </div>
@@ -121,6 +128,26 @@
                     <h2>Projects</h2>
                 </div>
                     <div class="projects-grid">
+                            <div class="project-card fade-in">
+                            <div class="project-header">
+                                <h3 class="project-title">Bird Camouflage Analysis with Computer Vision (Ongoing)</h3>
+                            </div>
+                            <p class="project-description">
+                                Developed a computer vision pipeline to quantify bird camouflage using deep learning on a dataset of 120K+ images across 12 species. 
+                                Built data preprocessing and randomized cropping workflows, trained CNN models including ResNet and VGG in PyTorch, and evaluated 
+                                detection accuracy, precision, and recall to create a quantitative framework for measuring camouflage difficulty across species.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Deep Learning</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">PyTorch</span>
+                                <span class="tech-tag">Convolutional Neural Networks</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://docs.google.com/presentation/d/1xloqNRNUT_nxB6AiVoL4T3kdOJhsnM5urMHTjCCSyEA/edit?usp=sharing" class="project-link">View Project</a>
+                            </div>
+                        </div>
                         <div class="project-card fade-in">
                             <div class="project-header">
                                 <h3 class="project-title">Navigateability</h3>
@@ -144,6 +171,27 @@
                                 <a href="https://coe.gatech.edu/news/2025/05/summer-storage-solution-wins-colleges-2025-fair-tech-competition#second-place-avoiding-mobility-roadblocks" class="project-link">Press Release</a>
                             </div>
                         </div>
+                        <div class="project-card fade-in">
+                            <div class="project-header">
+                                <h3 class="project-title">Fake News Detection Model</h3>
+                            </div>
+                             <p class="project-description">
+                            Developed a natural language processing–based machine learning model to detect fake news with 96% accuracy. 
+                            Engineered text features, trained a logistic regression classifier using Python and Keras, and 
+                            authored a research paper analyzing model architecture, performance, and real-world implications.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Natural Language Processing</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Keras</span>
+                                <span class="tech-tag">Logistic Regression</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="Media/Classifying_News_Through_Natural_Language_Processi (4).pdf" class="project-link">View Paper</a>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -151,49 +199,14 @@
         <section id="resume">
             <div class="container">
                 <div class="section-header fade-in">
-                    <div class="section-label">Resume</div>
-                    <h2>My Professional Journey</h2>
+                    <div class="section-label"></div>
+                    <h2>Resume</h2>
                 </div>
                 <div class="resume-content fade-in">
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="container">
-                <div class="section-header fade-in">
-                    <div class="section-label">Contact</div>
-                    <h2>Let's Connect</h2>
-                </div>
-                <div class="contact-content">
-                    <div class="contact-info fade-in">
-                        <p>
-                            I'm always open to new opportunities, collaborations, and conversations. 
-                            Whether you have a project in mind or just want to chat about tech, feel free to reach out!
-                        </p>
-                        <div class="contact-methods">
-                            <a href="mailto:your.email@example.com" class="contact-method">
-                                <div class="contact-icon">📧</div>
-                                <div class="contact-details">
-                                    <h3>Email</h3>
-                                    <span>your.email@example.com</span>
-                                </div>
-                            </a>
-                            <a href="https://github.com/yourusername" class="contact-method" target="_blank">
-                                <div class="contact-icon">💻</div>
-                                <div class="contact-details">
-                                    <h3>GitHub</h3>
-                                    <span>@yourusername</span>
-                                </div>
-                            </a>
-                            <a href="https://linkedin.com/in/yourprofile" class="contact-method" target="_blank">
-                                <div class="contact-icon">💼</div>
-                                <div class="contact-details">
-                                    <h3>LinkedIn</h3>
-                                    <span>/in/yourprofile</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+                    <iframe src="Media/lmc-resume.pdf" width="600" height="500" style="border: none;">
+                        This browser does not support PDFs. Please download the PDF to view it: 
+                        <a href="Media/lmc-resume.pdf">Download PDF</a>
+                    </iframe>
                 </div>
             </div>
         </section>
@@ -206,7 +219,6 @@
                 <a href="#experience">Experience</a>
                 <a href="#projects">Projects</a>
                 <a href="#resume">Resume</a>
-                <a href="#contact">Contact</a>
             </div>
         </div>
     </footer>

@@ -381,6 +381,10 @@ h2 {
 }
 
 /* Experience Section */
+#experience .section-header {
+    text-align: center;
+}
+
 .experience-list {
     display: flex;
     flex-direction: column;
@@ -438,6 +442,10 @@ h2 {
 }
 
 /* Projects Section */
+#projects .section-header {
+    text-align: center;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -572,6 +580,24 @@ footer {
 
 .footer-links a:hover {
     color: var(--accent-dark);
+}
+
+/* Resume Section */
+#resume {
+    text-align: center;
+}
+
+.resume-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.resume-content iframe {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px var(--shadow);
 }
 
 /* Responsive */

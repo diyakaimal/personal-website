@@ -71,9 +71,11 @@
                         </div>
                         <div class="experience-description">
                             <ul>
-                                <li>Cut 2024 emissions forecasting error from 16% to 1% by building a hybrid LSTM model and implementing Bayesian inference to dynamically refine predictive coefficients.</li>
-                                <li>Engineered scalable time-series forecasting pipelines with synthetic data generation, downtime simulations, and uncertainty quantification for robust long-term predictions.</li>
-                                <li>Integrated statistical modeling and deep learning to create a forecasting framework enabling hard-to-abate industries to evaluate emissions reduction initiatives and economic trade-offs.</li>
+                                <li>Cut 2024 emissions forecasting error from 16% to 1% by building a hybrid LSTM model and implementing
+                                Bayesian inference to dynamically refine predictive coefficients.</li>
+                                <li>Engineered scalable time-series forecasting pipelines with downtime simulations, and uncertainty quantification.</li>
+                                <li>Integrated statistical modeling and deep learning to create a forecasting framework enabling hard-to-abate
+                                industries to evaluate emissions reduction initiatives and economic trade-offs</li>
                             </ul>
                         </div>
                     </div>
@@ -91,9 +93,12 @@
                         </div>
                         <div class="experience-description">
                             <ul>
-                                <li>Work with Dr. Steve Mussmann and Dr. Ben Freeman to quantify bird camouflage in biodiversity efforts</li>
-                                <li>Utilize advanced machine learning techniques, including training convolutional neural networks to develop models for quantifying and predicting bird camouflage patterns.</li>
-                                <li>Integrate computer vision frameworks to extract and process ecological data, enhancing the accuracy of biodiversity assessments.</li>
+                                <li>Trained and evaluated CNNs (ResNet-18, VGG-11) on cropped 64×64 inputs, achieving up to 97% F1-score and
+                                revealing higher false-negative rates for highly camouflaged species.</li>
+                                <li>Led data preprocessing and model experimentation to quantify bird camouflage by building a 120K-image dataset
+                                across 12 species, balancing camouflaged and non-camouflaged classes.</li>
+                                <li>Identified species-specific camouflage effects through false positive/negative analysis, linking model errors to
+                                biological camouflage strategies.</li>
                             </ul>
                         </div>
                     </div>
@@ -121,93 +126,156 @@
             </div>
         </section>
 
-        <section id="projects">
+<section id="projects">
             <div class="container">
                 <div class="section-header fade-in">
                     <div class="section-label"></div>
                     <h2>Projects</h2>
                 </div>
-                    <div class="projects-grid">
-                            <div class="project-card fade-in">
-                            <div class="project-header">
-                                <h3 class="project-title">Bird Camouflage Analysis with Computer Vision (Ongoing)</h3>
-                            </div>
-                            <p class="project-description">
-                                Developed a computer vision pipeline to quantify bird camouflage using deep learning on a dataset of 120K+ images across 12 species. 
-                                Built data preprocessing and randomized cropping workflows, trained CNN models including ResNet and VGG in PyTorch, and evaluated 
-                                detection accuracy, precision, and recall to create a quantitative framework for measuring camouflage difficulty across species.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Deep Learning</span>
-                                <span class="tech-tag">Computer Vision</span>
-                                <span class="tech-tag">PyTorch</span>
-                                <span class="tech-tag">Convolutional Neural Networks</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://docs.google.com/presentation/d/1xloqNRNUT_nxB6AiVoL4T3kdOJhsnM5urMHTjCCSyEA/edit?usp=sharing" class="project-link">View Project</a>
-                            </div>
+                                        <div class="projects-grid">
+                        <!-- Bird Camouflage Card -->
+                        <div class="project-card fade-in" onclick="openModal('modal1')">
+                            <h3 class="project-title">Bird Camouflage Analysis</h3>
+                            <p class="project-click-hint">Click to learn more</p>
                         </div>
-                        <div class="project-card fade-in">
-                            <div class="project-header">
-                                <h3 class="project-title">Navigateability</h3>
-                                <div class="project-icon">
-                                    <img src="Media/navi-logo.png" alt="Navigateability Logo" style="width: 40px; height: 40px; object-fit: contain;">
+
+                        <!-- Navigateability Card -->
+                        <div class="project-card fade-in" onclick="openModal('modal2')">
+                            <h3 class="project-title">Navigateability</h3>
+                            <p class="project-click-hint">Click to learn more</p>
+                        </div>
+
+                        <!-- Fake News Detection Card -->
+                        <div class="project-card fade-in" onclick="openModal('modal3')">
+                            <h3 class="project-title">Fake News Detection</h3>
+                            <p class="project-click-hint">Click to learn more</p>
+                        </div>
+                    </div>
+
+                    <!-- Modal 1: Bird Camouflage -->
+                    <div id="modal1" class="project-modal-overlay" onclick="closeModalOnOverlay(event, 'modal1')">
+                        <div class="project-modal" onclick="event.stopPropagation()">
+                            <button class="modal-close" onclick="closeModal('modal1')">×</button>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Bird Camouflage Analysis with Computer Vision</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-text">
+                                        <p class="project-description">
+                                            Developed a computer vision pipeline to quantify bird camouflage using deep learning on a dataset of 120K+ images across 12 species. 
+                                            Built data preprocessing and randomized cropping workflows, trained CNN models including ResNet and VGG in PyTorch, and evaluated 
+                                            detection accuracy, precision, and recall to create a quantitative framework for measuring camouflage difficulty across species.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech-tag">Python</span>
+                                            <span class="tech-tag">Deep Learning</span>
+                                            <span class="tech-tag">Computer Vision</span>
+                                            <span class="tech-tag">PyTorch</span>
+                                            <span class="tech-tag">Convolutional Neural Networks</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="https://docs.google.com/presentation/d/1xloqNRNUT_nxB6AiVoL4T3kdOJhsnM5urMHTjCCSyEA/edit?usp=sharing" target="_blank" class="project-link">View Project</a>
+                                        </div>
+                                    </div>
+                                    <div class="modal-images">
+                                        <img src="Media/bird_table.png" alt="bird_table" class="modal-image">
+                                    </div>
                                 </div>
                             </div>
-                            <p class="project-description">
-                                A web application designed to map accessible campus routes using crowdsourced data and campus facilities.
-                                Provides real-time, user-informed routing to help mobility-impaired users navigate more safely and efficiently.
-                                Awarded 2nd place at Georgia Tech’s FAIR Tech Competition for innovation in accessibility.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React.js</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">Firebase</span>
-                                <span class="tech-tag">Google Maps API</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://docs.google.com/presentation/d/1eCoXm-bqtFBAcZOBCWmqc84Md7CjyU3X/edit?usp=sharing&ouid=112270693770212242981&rtpof=true&sd=true" class="project-link">View Project Presentation</a>
-                                <a href="https://coe.gatech.edu/news/2025/05/summer-storage-solution-wins-colleges-2025-fair-tech-competition#second-place-avoiding-mobility-roadblocks" class="project-link">Press Release</a>
+                        </div>
+                    </div>
+
+                    <!-- Modal 2: Navigateability -->
+                    <div id="modal2" class="project-modal-overlay" onclick="closeModalOnOverlay(event, 'modal2')">
+                        <div class="project-modal" onclick="event.stopPropagation()">
+                            <button class="modal-close" onclick="closeModal('modal2')">×</button>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Navigateability</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-text">
+                                        <p class="project-description">
+                                            A web application designed to map accessible campus routes using crowdsourced data and campus facilities.
+                                            Provides real-time, user-informed routing to help mobility-impaired users navigate more safely and efficiently.
+                                            Awarded 2nd place at Georgia Tech's FAIR Tech Competition for innovation in accessibility.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">Node.js</span>
+                                            <span class="tech-tag">Firebase</span>
+                                            <span class="tech-tag">Google Maps API</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="https://docs.google.com/presentation/d/1eCoXm-bqtFBAcZOBCWmqc84Md7CjyU3X/edit?usp=sharing&ouid=112270693770212242981&rtpof=true&sd=true" target="_blank" class="project-link">View Project Presentation</a>
+                                            <a href="https://coe.gatech.edu/news/2025/05/summer-storage-solution-wins-colleges-2025-fair-tech-competition#second-place-avoiding-mobility-roadblocks" target="_blank" class="project-link">Press Release</a>
+                                        </div>
+                                    </div>
+                                    <div class="modal-images">
+                                        <a href="https://drive.google.com/file/d/1D0lmdJ1VWu2yqN7Lfwx9vHicIEI3EbSR/view?usp=sharing" target="_blank">
+                                            <img src="Media/nav.png" alt="Screenshot" class="modal-image">
+                                        </a>                            
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="project-card fade-in">
-                            <div class="project-header">
-                                <h3 class="project-title">Fake News Detection Model</h3>
+                    </div>
+
+                    <!-- Modal 3: Fake News Detection -->
+                    <div id="modal3" class="project-modal-overlay" onclick="closeModalOnOverlay(event, 'modal3')">
+                        <div class="project-modal" onclick="event.stopPropagation()">
+                            <button class="modal-close" onclick="closeModal('modal3')">×</button>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title">Fake News Detection Model</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-text">
+                                        <p class="project-description">
+                                            Developed a natural language processing–based machine learning model to detect fake news with 96% accuracy. 
+                                            Engineered text features, trained a logistic regression classifier using Python and Keras, and 
+                                            authored a research paper analyzing model architecture, performance, and real-world implications.
+                                        </p>
+                                        <div class="project-tech">
+                                            <span class="tech-tag">Python</span>
+                                            <span class="tech-tag">Natural Language Processing</span>
+                                            <span class="tech-tag">Machine Learning</span>
+                                            <span class="tech-tag">Keras</span>
+                                            <span class="tech-tag">Logistic Regression</span>
+                                        </div>
+                                        <div class="project-links">
+                                            <a href="Media/Classifying_News_Through_Natural_Language_Processi (4).pdf" target="_blank" class="project-link">View Paper</a>
+                                        </div>
+                                    </div>
+                                    <div class="modal-images">
+                                        <img src="Media/fake_news_graph.png" alt="fake_news" class="modal-image">
+                                    </div>
+                                </div>
                             </div>
-                             <p class="project-description">
-                            Developed a natural language processing–based machine learning model to detect fake news with 96% accuracy. 
-                            Engineered text features, trained a logistic regression classifier using Python and Keras, and 
-                            authored a research paper analyzing model architecture, performance, and real-world implications.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Natural Language Processing</span>
-                                <span class="tech-tag">Machine Learning</span>
-                                <span class="tech-tag">Keras</span>
-                                <span class="tech-tag">Logistic Regression</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="Media/Classifying_News_Through_Natural_Language_Processi (4).pdf" class="project-link">View Paper</a>
-                            </div>
+                        </div>
+                    </div>
                         </div>
                     </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="resume">
+        <section id="resume" style="text-align: center;">
             <div class="container">
-                <div class="section-header fade-in">
-                    <div class="section-label"></div>
-                    <h2>Resume</h2>
+            <div class="section-header fade-in">
+                <div class="section-label"></div>
+                <h2>Resume</h2>
+            </div>
+            <div class="resume-content fade-in">
+                <iframe src="Media/resume.pdf" width="600" height="500" style="border: none; margin: 0 auto; display: block;">
+                This browser does not support PDFs. Please download the PDF to view it: 
+                <a href="Media/resume.pdf">Download PDF</a>
+                </iframe>
+                <div style="margin-top: 1.5rem;">
+                    <a href="Media/resume.pdf" target="_blank" class="btn btn-primary">Open Resume in New Tab</a>
                 </div>
-                <div class="resume-content fade-in">
-                    <iframe src="Media/lmc-resume.pdf" width="600" height="500" style="border: none;">
-                        This browser does not support PDFs. Please download the PDF to view it: 
-                        <a href="Media/Kaimal_Resume_copy.pdf">Download PDF</a>
-                    </iframe>
-                </div>
+            </div>
             </div>
         </section>
     </main>

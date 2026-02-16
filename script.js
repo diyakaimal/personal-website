@@ -30,9 +30,35 @@ document.querySelectorAll('.fade-in').forEach(element => {
     observer.observe(element);
 });
 
-// Form submission handler
-document.querySelector('.contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thanks for reaching out! This is a demo form. In a real implementation, this would send your message.');
-    this.reset();
+// Modal functions for project cards
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = ''; // Re-enable scrolling
+    }
+}
+
+function closeModalOnOverlay(event, modalId) {
+    if (event.target.classList.contains('project-modal-overlay')) {
+        closeModal(modalId);
+    }
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        const activeModal = document.querySelector('.project-modal-overlay.active');
+        if (activeModal) {
+            closeModal(activeModal.id);
+        }
+    }
 });
